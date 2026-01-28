@@ -1,9 +1,32 @@
-body {
-    padding-top: 70px;
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 150px 0 100px;
+    margin-top: 56px;
 }
 
-.hero {
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-                url('../assets/img/hero.jpg') center/cover;
-    padding: 120px 0;
+/* Cards hover effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Skills section */
+#skills .col {
+    padding: 20px;
+    margin: 10px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    font-weight: 600;
 }
