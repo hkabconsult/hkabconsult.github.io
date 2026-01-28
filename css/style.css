@@ -186,11 +186,14 @@ section {
     font-weight: 600;
 }
 
-.about-illustration i {
-    font-size: 15rem;
-    opacity: 0.8;
+.profile-photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;   /* garde le cadrage */
+    opacity: 0.9;
     animation: pulse 3s ease-in-out infinite;
 }
+
 
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
