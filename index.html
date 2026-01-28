@@ -2,103 +2,346 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Hawa Kaboré | Consultante & Formatrice IT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="description" content="Hawa Kaboré - Consultante IT et Formatrice spécialisée en design, formation professionnelle et community management">
+    <meta name="keywords" content="consultant IT, formatrice, community management, design, transformation digitale">
+    <meta name="author" content="Hawa Kaboré">
+    
+    <title>Hawa Kaboré | Consultante & Formatrice IT</title>
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- CSS perso -->
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- CSS personnalisé -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">Hawa Kaboré</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- HERO -->
-<header class="hero text-white text-center">
-    <div class="container">
-        <h1>Consultante IT & Formatrice</h1>
-        <p class="lead">Design • Formation • Community Management</p>
-    </div>
-</header>
-
-<!-- A PROPOS -->
-<section id="about" class="container py-5">
-    <h2 class="text-center mb-4">À propos</h2>
-    <p class="text-center">
-        Consultante en informatique spécialisée en design, formation et community management.
-        J’accompagne les organisations dans leur transformation digitale.
-    </p>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="bg-light py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Services</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card text-center p-3">
-                    <h5>Formation professionnelle</h5>
-                    <p>Formations IT, digital, cloud, bureautique</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card text-center p-3">
-                    <h5>Consulting IT</h5>
-                    <p>Audit, accompagnement, solutions numériques</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card text-center p-3">
-                    <h5>Community Management</h5>
-                    <p>Gestion réseaux sociaux & stratégie digitale</p>
-                </div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-code-slash"></i> Hawa Kaboré
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-</section>
+    </nav>
 
-<!-- COMPETENCES -->
-<section id="skills" class="container py-5">
-    <h2 class="text-center mb-4">Compétences</h2>
-    <div class="row text-center">
-        <div class="col">HTML5</div>
-        <div class="col">CSS3</div>
-        <div class="col">Bootstrap</div>
-        <div class="col">JavaScript</div>
-        <div class="col">GitHub</div>
-    </div>
-</section>
+    <!-- HERO SECTION -->
+    <header class="hero text-white text-center d-flex align-items-center">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="display-3 fw-bold mb-3 animate-fade-in">Hawa Kaboré</h1>
+                <p class="lead fs-3 mb-4 animate-fade-in-delay">Consultante IT & Formatrice</p>
+                <p class="fs-5 mb-4 animate-fade-in-delay-2">
+                    <i class="bi bi-palette"></i> Design • 
+                    <i class="bi bi-book"></i> Formation • 
+                    <i class="bi bi-people"></i> Community Management
+                </p>
+                <a href="#contact" class="btn btn-light btn-lg px-5 animate-fade-in-delay-3">
+                    <i class="bi bi-envelope"></i> Me contacter
+                </a>
+            </div>
+        </div>
+    </header>
 
-<!-- CONTACT -->
-<section id="contact" class="bg-dark text-white py-5">
-    <div class="container text-center">
-        <h2>Contact</h2>
-        <p>Email : hawakabore@email.com</p>
-        <p>LinkedIn | Facebook | GitHub</p>
-    </div>
-</section>
+    <!-- À PROPOS -->
+    <section id="about" class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="mb-4">À propos de moi</h2>
+                <p class="lead">
+                    Consultante en informatique passionnée par l'innovation et la transformation digitale.
+                </p>
+                <p>
+                    Avec une expertise approfondie en design, formation professionnelle et community management, 
+                    j'accompagne les organisations dans leur évolution numérique. Mon approche combine compétences 
+                    techniques et sens de la pédagogie pour offrir des solutions adaptées à chaque besoin.
+                </p>
+                <p>
+                    Ma mission : rendre la technologie accessible et permettre aux équipes de développer 
+                    leurs compétences digitales dans un environnement en constante évolution.
+                </p>
+                <div class="mt-4">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="bi bi-chat-dots"></i> Discutons de votre projet
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <div class="about-illustration">
+                    <i class="bi bi-person-circle display-1 text-primary"></i>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/script.js"></script>
+    <!-- SERVICES -->
+    <section id="services" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Mes Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm">
+                        <div class="card-icon mb-3">
+                            <i class="bi bi-mortarboard display-4 text-primary"></i>
+                        </div>
+                        <h5 class="card-title mb-3">Formation Professionnelle</h5>
+                        <p class="card-text">
+                            Formations sur mesure en informatique, outils digitaux, cloud computing et bureautique. 
+                            Sessions adaptées à tous les niveaux.
+                        </p>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li><i class="bi bi-check-circle text-success me-2"></i>Formation IT & développement</li>
+                            <li><i class="bi bi-check-circle text-success me-2"></i>Outils collaboratifs</li>
+                            <li><i class="bi bi-check-circle text-success me-2"></i>Cloud & sécurité</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm">
+                        <div class="card-icon mb-3">
+                            <i class="bi bi-gear display-4 text-primary"></i>
+                        </div>
+                        <h5 class="card-title mb-3">Consulting IT</h5>
+                        <p class="card-text">
+                            Accompagnement stratégique pour votre transformation digitale. Audit, conseil et 
+                            mise en œuvre de solutions technologiques innovantes.
+                        </p>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li><i class="bi bi-check-circle text-success me-2"></i>Audit système & processus</li>
+                            <li><i class="bi bi-check-circle text-success me-2"></i>Stratégie digitale</li>
+                            <li><i class="bi bi-check-circle text-success me-2"></i>Accompagnement au changement</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm">
+                        <div class="card-icon mb-3">
+                            <i class="bi bi-chat-square-heart display-4 text-primary"></i>
+                        </div>
+                        <h5 class="card-title mb-3">Community Management</h5>
+                        <p class="card-text">
+                            Gestion complète de votre présence en ligne. Stratégie de contenu, animation de 
+                            communautés et développement de votre image de marque.
+                        </p>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li><i class="bi bi-check-circle text-success me-2"></i>Stratégie réseaux sociaux</li>
+                            <li><i class="bi bi-check-circle text-success me-2"></i>Création de contenu</li>
+                            <li><i class="bi bi-check-circle text-success me-2"></i>Analyse & reporting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- COMPÉTENCES -->
+    <section id="skills" class="container py-5">
+        <h2 class="text-center mb-5">Compétences Techniques</h2>
+        <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="skill-badge text-center p-3">
+                    <i class="bi bi-filetype-html display-6 text-danger"></i>
+                    <p class="mt-2 mb-0 fw-semibold">HTML5</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="skill-badge text-center p-3">
+                    <i class="bi bi-filetype-css display-6 text-primary"></i>
+                    <p class="mt-2 mb-0 fw-semibold">CSS3</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="skill-badge text-center p-3">
+                    <i class="bi bi-bootstrap display-6 text-purple"></i>
+                    <p class="mt-2 mb-0 fw-semibold">Bootstrap</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="skill-badge text-center p-3">
+                    <i class="bi bi-filetype-js display-6 text-warning"></i>
+                    <p class="mt-2 mb-0 fw-semibold">JavaScript</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="skill-badge text-center p-3">
+                    <i class="bi bi-github display-6 text-dark"></i>
+                    <p class="mt-2 mb-0 fw-semibold">GitHub</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="skill-badge text-center p-3">
+                    <i class="bi bi-wordpress display-6 text-info"></i>
+                    <p class="mt-2 mb-0 fw-semibold">WordPress</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Barres de progression -->
+        <div class="row mt-5">
+            <div class="col-lg-6 mb-4">
+                <h5>Design & UI/UX</h5>
+                <div class="progress" style="height: 25px;">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <h5>Développement Web</h5>
+                <div class="progress" style="height: 25px;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <h5>Formation & Pédagogie</h5>
+                <div class="progress" style="height: 25px;">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <h5>Community Management</h5>
+                <div class="progress" style="height: 25px;">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 88%;" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">88%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Portfolio</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item card border-0 shadow-sm overflow-hidden">
+                        <div class="portfolio-overlay">
+                            <i class="bi bi-laptop display-1 text-white"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Sites Web Professionnels</h5>
+                            <p class="card-text">Création de sites web modernes et responsives pour entreprises</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item card border-0 shadow-sm overflow-hidden">
+                        <div class="portfolio-overlay">
+                            <i class="bi bi-graph-up display-1 text-white"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Stratégies Digitales</h5>
+                            <p class="card-text">Plans d'action pour optimiser la présence en ligne</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item card border-0 shadow-sm overflow-hidden">
+                        <div class="portfolio-overlay">
+                            <i class="bi bi-people-fill display-1 text-white"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Formations sur Mesure</h5>
+                            <p class="card-text">Programmes de formation adaptés aux besoins spécifiques</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="mb-4">Contactez-moi</h2>
+                    <p class="lead mb-4">
+                        Vous avez un projet ou souhaitez en savoir plus sur mes services ? 
+                        N'hésitez pas à me contacter !
+                    </p>
+                    <div class="contact-info">
+                        <div class="mb-3">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            <a href="mailto:hawakabore@email.com" class="text-white text-decoration-none">hawakabore@email.com</a>
+                        </div>
+                        <div class="mb-3">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            <span>Abomey-Calavi, Bénin</span>
+                        </div>
+                        <div class="mb-3">
+                            <i class="bi bi-phone-fill me-2"></i>
+                            <a href="tel:+22900000000" class="text-white text-decoration-none">+229 XX XX XX XX</a>
+                        </div>
+                    </div>
+                    <div class="social-links mt-4">
+                        <a href="#" class="btn btn-outline-light btn-lg me-2" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg me-2" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg me-2" aria-label="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg" aria-label="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nom complet</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Sujet</label>
+                            <input type="text" class="form-control" id="subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-light btn-lg w-100">
+                            <i class="bi bi-send"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Hawa Kaboré. Tous droits réservés.</p>
+            <p class="small mt-2">Consultante IT • Formatrice • Community Manager</p>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button id="backToTop" class="btn btn-primary btn-lg" title="Retour en haut">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS personnalisé -->
+    <script src="js/script.js"></script>
 </body>
 </html>
