@@ -1,17 +1,7 @@
 # Portfolio Professionnel - Hawa Kaboré
 
-Site web portfolio moderne et responsive pour consultante IT et formatrice professionnelle.
 
-## 🌟 Caractéristiques
-
-- ✨ Design moderne et professionnel
-- 📱 Entièrement responsive (mobile, tablette, desktop)
-- 🎨 Animations fluides et interactives
-- 🚀 Performance optimisée
-- ♿ Accessible et conforme aux standards web
-- 🎯 SEO friendly
-
-## 📁 Structure des fichiers
+## Structure des fichiers
 
 ```
 portfolio/
@@ -32,7 +22,7 @@ portfolio/
 - **Bootstrap 5.3.2** - Framework CSS responsive
 - **Bootstrap Icons** - Icônes vectorielles
 
-## 🚀 Installation et utilisation
+## Installation et utilisation
 
 ### Prérequis
 - Un navigateur web moderne (Chrome, Firefox, Safari, Edge)
@@ -71,7 +61,7 @@ python -m http.server 8000
 # Puis ouvrez http://localhost:8000 dans votre navigateur
 ```
 
-## ✏️ Personnalisation
+## Personnalisation
 
 ### 1. Informations personnelles
 
@@ -183,7 +173,7 @@ Ajoutez vos projets dans la section `#portfolio` :
 </div>
 ```
 
-## 🎨 Icônes Bootstrap
+## Icônes Bootstrap
 
 Liste des icônes les plus utilisées :
 
@@ -199,7 +189,7 @@ Liste des icônes les plus utilisées :
 
 Voir toutes les icônes : https://icons.getbootstrap.com/
 
-## 📝 Fonctionnalités JavaScript
+## Fonctionnalités JavaScript
 
 ### Formulaire de contact
 
@@ -242,7 +232,7 @@ contactForm.addEventListener('submit', async function(e) {
 - **EmailJS** : https://www.emailjs.com/
 - **Netlify Forms** : https://www.netlify.com/products/forms/
 
-## 🌐 Déploiement
+## Déploiement
 
 ### GitHub Pages
 
@@ -265,14 +255,14 @@ contactForm.addEventListener('submit', async function(e) {
 2. Importez votre projet
 3. Déployez automatiquement
 
-## 📱 Compatibilité
+## Compatibilité
 
-- ✅ Chrome 90+
-- ✅ Firefox 88+
-- ✅ Safari 14+
-- ✅ Edge 90+
-- ✅ Mobile Safari
-- ✅ Chrome Mobile
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
+- Mobile Safari
+- Chrome Mobile
 
 ## ⚡ Optimisations
 
@@ -284,7 +274,7 @@ contactForm.addEventListener('submit', async function(e) {
 4. **Activez la compression GZIP** sur votre serveur
 5. **Ajoutez un cache browser**
 
-## 🆘 Support et problèmes courants
+##  Support et problèmes courants
 
 ### Le menu ne se ferme pas sur mobile
 Vérifiez que Bootstrap JS est bien chargé avant votre script.js
@@ -295,7 +285,7 @@ Vérifiez que le fichier CSS est correctement lié et que le chemin est correct.
 ### Le formulaire ne s'envoie pas
 C'est normal ! Configurez un service backend ou utilisez un service tiers comme Formspree.
 
-## 📚 Ressources utiles
+## Ressources utiles
 
 - [Documentation Bootstrap](https://getbootstrap.com/docs/5.3/)
 - [Bootstrap Icons](https://icons.getbootstrap.com/)
@@ -303,14 +293,6 @@ C'est normal ! Configurez un service backend ou utilisez un service tiers comme 
 - [CSS Tricks](https://css-tricks.com/)
 - [W3C Validator](https://validator.w3.org/)
 
-## 📄 Licence
-
-Ce template est libre d'utilisation pour vos projets personnels et commerciaux.
-
-## 👤 Contact
 
 Pour toute question ou suggestion d'amélioration, n'hésitez pas à me contacter !
 
----
-
-**Bon courage avec votre portfolio ! 🚀**
