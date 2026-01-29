@@ -138,7 +138,7 @@ section:not(.hero) {
    À PROPOS
 ======================================== */
 
-#about
+#about,
 
 #about .lead {
     color: var(--primary-color);
