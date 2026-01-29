@@ -138,11 +138,7 @@ section:not(.hero) {
    À PROPOS
 ======================================== */
 
-#about {
-    position: relative;
-    z-index: 1;
-    background: white;
-}
+#about
 
 #about .lead {
     color: var(--primary-color);
