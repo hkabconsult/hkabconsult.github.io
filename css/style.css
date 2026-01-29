@@ -333,6 +333,23 @@ section {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2) !important;
 }
 
+
+.website-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.website-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.website-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+
 /* ========================================
    CONTACT
 ======================================== */
