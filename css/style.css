@@ -93,12 +93,15 @@ section h2 {
 /* ========================================
    HERO – PLEIN ÉCRAN
 ======================================== */
+
 .hero {
-    min-height: 100vh;
+    height: 100vh;                 /* PAS min-height */
     display: flex;
     align-items: center;
-    padding: 120px 0 80px;
-    padding-top: 140px;
+
+    padding-top: 80px;             /* hauteur du navbar */
+    padding-bottom: 0;
+
     background:
         linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
         url("../assets/img/ale.svg");
@@ -107,6 +110,7 @@ section h2 {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 
 .hero h1 {
     letter-spacing: 1px;
