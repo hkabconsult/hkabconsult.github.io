@@ -201,7 +201,7 @@ window.addEventListener('scroll', function() {
 });
 
 // ========================================
-// COMPTEUR ANIMÉ (si vous ajoutez des statistiques)
+// COMPTEUR ANIMÉ POUR LES STATISTIQUES
 // ========================================
 function animateCounter(element, target, duration = 2000) {
     let start = 0;
@@ -217,6 +217,30 @@ function animateCounter(element, target, duration = 2000) {
         }
     }, 16);
 }
+
+// Observer pour démarrer les compteurs quand ils sont visibles
+const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const counter = entry.target;
+            const target = parseInt(counter.getAttribute('data-target'));
+            
+            // Vérifier si le compteur n'a pas déjà été animé
+            if (counter.textContent === '0') {
+                animateCounter(counter, target);
+            }
+            
+            counterObserver.unobserve(counter);
+        }
+    });
+}, {
+    threshold: 0.5
+});
+
+// Observer tous les éléments avec la classe counter
+document.querySelectorAll('.counter').forEach(counter => {
+    counterObserver.observe(counter);
+});
 
 // ========================================
 // EFFET DE FRAPPE (TYPING EFFECT)
