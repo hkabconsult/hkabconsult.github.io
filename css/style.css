@@ -111,6 +111,11 @@ section h2 {
     background-repeat: no-repeat;
 }
 
+section:not(.hero) {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+}
 
 .hero h1 {
     letter-spacing: 1px;
