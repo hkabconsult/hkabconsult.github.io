@@ -253,14 +253,10 @@ section:not(.hero) {
 .partner-logo {
     max-height: 110px;
     object-fit: contain;
-    opacity: .85;
-    filter: grayscale(100%);
     transition: var(--transition);
 }
 
 .partner-logo:hover {
-    filter: grayscale(0%);
-    opacity: 1;
     transform: scale(1.08);
 }
 
