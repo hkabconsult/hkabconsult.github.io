@@ -233,7 +233,7 @@ section:not(.hero) {
 
 .website-card img,
 .portfolio-card img {
-    height: 200px;
+    height: 350px;
     object-fit: cover;
 }
 
