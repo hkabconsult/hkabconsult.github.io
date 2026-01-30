@@ -141,7 +141,6 @@ section:not(.hero) {
 #about,
 
 
-
 .profile-photo {
     width: 340px;
     height: 340px;
@@ -224,16 +223,27 @@ section:not(.hero) {
 }
 
 /* ========================================
-   PORTFOLIO & SITES WEB
+   PORTFOLIO
 ======================================== */
-#portfolio,
-#websites {
+#portfolio{
     padding: 80px 0;
 }
 
 .website-card img,
 .portfolio-card img {
-    height: 900px;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* ========================================
+   SITES WEB
+======================================== */
+#websites {
+    padding: 80px 0;
+}
+
+.website-card img {
+    height: 350px;
     object-fit: cover;
 }
 
@@ -241,15 +251,17 @@ section:not(.hero) {
    PARTENAIRES
 ======================================== */
 .partner-logo {
-    max-height: 80px;
-    opacity: .8;
+    max-height: 110px;
+    object-fit: contain;
+    opacity: .85;
+    filter: grayscale(100%);
     transition: var(--transition);
 }
 
 .partner-logo:hover {
     filter: grayscale(0%);
     opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 /* ========================================
