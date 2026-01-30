@@ -242,7 +242,6 @@ section:not(.hero) {
 ======================================== */
 .partner-logo {
     max-height: 80px;
-    filter: grayscale(100%);
     opacity: .8;
     transition: var(--transition);
 }
