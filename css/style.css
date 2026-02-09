@@ -141,7 +141,7 @@ section:not(.hero) {
 #about {
     margin: 30px;
     padding: 80px;
-    border: 2px solid black;
+    border: 2px solid white;
 }
 
 #about h2 {
