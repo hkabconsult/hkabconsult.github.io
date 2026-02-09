@@ -95,12 +95,12 @@ section h2 {
 ======================================== */
 
 .hero {
-    height: 100vh;                 /* PAS min-height */
+    min-height: calc(100vh - 80px);       
     display: flex;
     align-items: center;
 
     padding-top: 80px;             /* hauteur du navbar */
-    padding-bottom: 0;
+    padding-bottom: 120px;
 
     background:
         linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
@@ -138,7 +138,9 @@ section:not(.hero) {
    À PROPOS
 ======================================== */
 
-#about,
+#about {
+    margin-top: 0; /* plus besoin de hack */
+},
 
 
 .profile-photo {
