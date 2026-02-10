@@ -210,28 +210,95 @@ if (modalInscription) {
     });
 }
 
+// Formulaire rapide d'inscription (dans le modal)
 const quickForm = document.getElementById('quickInscriptionForm');
 if (quickForm) {
     quickForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        alert('Merci pour votre demande ! Nous vous recontacterons dans les 24h.');
+        // Récupération des valeurs
+        const nom = document.getElementById('quick-nom') ? document.getElementById('quick-nom').value : '';
+        const email = document.getElementById('quick-email') ? document.getElementById('quick-email').value : '';
+        const tel = document.getElementById('quick-tel') ? document.getElementById('quick-tel').value : '';
         
-        if (typeof bootstrap !== 'undefined' && modalInscription) {
-            const modal = bootstrap.Modal.getInstance(modalInscription);
-            if (modal) modal.hide();
+        // Validation
+        if (!nom || !email || !tel) {
+            showAlert('Veuillez remplir tous les champs obligatoires', 'warning');
+            return;
         }
         
-        this.reset();
+        // Validation email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            showAlert('Veuillez entrer une adresse email valide', 'danger');
+            return;
+        }
+        
+        // Simulation d'envoi
+        const submitButton = this.querySelector('button[type="submit"]');
+        const originalText = submitButton.innerHTML;
+        
+        submitButton.disabled = true;
+        submitButton.innerHTML = '<i class="bi bi-hourglass-split"></i> Envoi en cours...';
+        
+        setTimeout(() => {
+            showAlert('✅ Demande envoyée avec succès ! Nous vous recontacterons dans les 24h.', 'success');
+            
+            // Fermer le modal
+            if (typeof bootstrap !== 'undefined' && modalInscription) {
+                const modal = bootstrap.Modal.getInstance(modalInscription);
+                if (modal) modal.hide();
+            }
+            
+            // Réinitialiser le formulaire
+            this.reset();
+            submitButton.disabled = false;
+            submitButton.innerHTML = originalText;
+        }, 1500);
     });
 }
 
+// Formulaire principal de demande de devis
 const formationForm = document.getElementById('formationForm');
 if (formationForm) {
     formationForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        alert('Merci pour votre demande ! Nous vous recontacterons dans les 24h.');
-        this.reset();
+        
+        // Récupération des valeurs
+        const nom = document.getElementById('nom') ? document.getElementById('nom').value : '';
+        const telephone = document.getElementById('telephone') ? document.getElementById('telephone').value : '';
+        const emailForm = document.getElementById('email-form') ? document.getElementById('email-form').value : '';
+        const formationChoisie = document.getElementById('formation-choisie') ? document.getElementById('formation-choisie').value : '';
+        const typeFormation = document.getElementById('type-formation') ? document.getElementById('type-formation').value : '';
+        
+        // Validation
+        if (!nom || !telephone || !emailForm || !formationChoisie || !typeFormation) {
+            showAlert('Veuillez remplir tous les champs obligatoires (*)', 'warning');
+            return;
+        }
+        
+        // Validation email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailForm)) {
+            showAlert('Veuillez entrer une adresse email valide', 'danger');
+            return;
+        }
+        
+        // Simulation d'envoi
+        const submitButton = this.querySelector('button[type="submit"]');
+        const originalText = submitButton.innerHTML;
+        
+        submitButton.disabled = true;
+        submitButton.innerHTML = '<i class="bi bi-hourglass-split"></i> Envoi en cours...';
+        
+        setTimeout(() => {
+            showAlert('✅ Demande de devis envoyée avec succès ! Nous vous recontacterons dans les 24h pour discuter de votre projet.', 'success');
+            
+            // Réinitialiser le formulaire
+            this.reset();
+            submitButton.disabled = false;
+            submitButton.innerHTML = originalText;
+        }, 1500);
     });
 }
 
