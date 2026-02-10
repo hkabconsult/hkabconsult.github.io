@@ -96,7 +96,7 @@ section h2 {
 ======================================== */
 
 .hero {
-    min-height: calc(130vh - 80px);
+    min-height: calc(120vh - 80px);
     display: flex;
     align-items: center;
 
