@@ -96,7 +96,7 @@ section h2 {
 ======================================== */
 
 .hero {
-    min-height: calc(150vh - 80px);
+    min-height: calc(130vh - 80px);
     display: flex;
     align-items: center;
 
@@ -236,7 +236,7 @@ section:not(.hero) {
 ======================================== */
 #portfolio{
     padding: 80px 0;
-    
+    margin: 5px;
 }
 
 .website-card img,
