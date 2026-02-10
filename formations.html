@@ -809,30 +809,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- JS personnalisé -->
     <script src="js/script.js"></script>
-    <script>
-        // Script pour pré-remplir le modal avec la formation sélectionnée
-        const modalInscription = document.getElementById('modalInscription');
-        modalInscription.addEventListener('show.bs.modal', function (event) {
-            const button = event.relatedTarget;
-            const formation = button.getAttribute('data-formation');
-            document.getElementById('formation-selected').value = formation;
-            document.getElementById('formation-name-display').textContent = formation;
-        });
 
-        // Gestion du formulaire rapide
-        document.getElementById('quickInscriptionForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Merci pour votre demande ! Nous vous recontacterons dans les 24h.');
-            bootstrap.Modal.getInstance(modalInscription).hide();
-            this.reset();
-        });
-
-        // Gestion du formulaire principal
-        document.getElementById('formationForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Merci pour votre demande ! Nous vous recontacterons dans les 24h.');
-            this.reset();
-        });
-    </script>
 </body>
 </html>
