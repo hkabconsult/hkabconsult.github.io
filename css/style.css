@@ -246,7 +246,7 @@ section:not(.hero) {
 }
 
 /* ========================================
-   SITES WEB
+   SITES WEB cover
 ======================================== */
 #websites {
     padding: 80px 0;
@@ -255,7 +255,7 @@ section:not(.hero) {
 .website-card img {
     height: 350px;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 8px;
 }
 
