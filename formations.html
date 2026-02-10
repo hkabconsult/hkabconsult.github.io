@@ -662,28 +662,28 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <form class="formation-contact-form" id="formationForm">
+                    <form class="formation-contact-form" id="formationForm" action="https://formspree.io/f/mojnjqaz" method="POST">
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="nom" class="form-label">Nom complet *</label>
-                                <input type="text" class="form-control" id="nom" required>
+                                <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre nom complet"required>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="telephone" class="form-label">Téléphone *</label>
-                                <input type="tel" class="form-control" id="telephone" required>
+                                <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="Votre téléphone" required>
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="email-form" class="form-label">Email *</label>
-                            <input type="email" class="form-control" id="email-form" required>
+                            <input type="email" class="form-control" id="email-form" name="email-form" placeholder="Votre mail" required>
                         </div>
                         <div class="mb-3">
                             <label for="structure" class="form-label">Structure / Organisation</label>
-                            <input type="text" class="form-control" id="structure">
+                            <input type="text" class="form-control" id="structure" name="structure" placeholder="Nom de votre structure">
                         </div>
                         <div class="mb-3">
                             <label for="formation-choisie" class="form-label">Formation souhaitée *</label>
-                            <select class="form-select" id="formation-choisie" required>
+                            <select class="form-select" id="formation-choisie" name="formation-choisie" required>
                                 <option value="">Choisissez une formation</option>
                                 <option value="Google Workspace">Google Workspace</option>
                                 <option value="Microsoft Office">Microsoft Office</option>
@@ -704,7 +704,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="type-formation" class="form-label">Type de formation *</label>
-                            <select class="form-select" id="type-formation" required>
+                            <select class="form-select" id="type-formation" name="name" required>
                                 <option value="">Choisissez un type</option>
                                 <option value="Individuelle">Individuelle</option>
                                 <option value="Groupe">Groupe</option>
@@ -713,11 +713,11 @@
                         </div>
                         <div class="mb-3">
                             <label for="nombre-participants" class="form-label">Nombre de participants</label>
-                            <input type="number" class="form-control" id="nombre-participants" min="1" max="15">
+                            <input type="number" class="form-control" id="nombre-participants" min="1" max="15" name="nombre-participants" >
                         </div>
                         <div class="mb-3">
                             <label for="message-form" class="form-label">Informations complémentaires</label>
-                            <textarea class="form-control" id="message-form" rows="4" placeholder="Dates souhaitées, besoins spécifiques..."></textarea>
+                            <textarea class="form-control" id="message-form" rows="4"name="message" placeholder="Dates souhaitées, besoins spécifiques..."></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-lg w-100">
                             <i class="bi bi-send"></i> Envoyer la demande
