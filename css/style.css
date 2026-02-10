@@ -239,7 +239,6 @@ section:not(.hero) {
     margin: 5px;
 }
 
-.website-card img,
 .portfolio-card img {
     height: 500px;
     object-fit: cover;
@@ -256,6 +255,7 @@ section:not(.hero) {
 .website-card img {
     height: 350px;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 /* ========================================
