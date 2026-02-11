@@ -635,99 +635,229 @@
     </section>
 
     <!-- CONTACT FORMATION -->
-    <section id="contact-formation" class="py-5">
+    <section id="contact-formation" class="py-5 bg-light">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="mb-4">Inscription ou devis ?</h2>
-                    <p class="lead mb-4">
-                        Remplissez le formulaire, nous vous contacterons dans les 24h.
-                    </p>
-                    <div class="contact-info">
-                        <div class="mb-3">
-                            <i class="bi bi-envelope-fill text-primary me-2"></i>
-                            <strong>Email :</strong> hkabconsult@outlook.com
+            <!-- Titre principal -->
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Intéressé(e) par une formation ?</h2>
+                <p class="lead text-muted">
+                    Contactez-nous dès maintenant pour recevoir votre devis personnalisé
+                </p>
+            </div>
+    
+            <!-- Cartes de contact rapide -->
+            <div class="row g-4 mb-5">
+                <!-- WhatsApp - Contact prioritaire -->
+                <div class="col-lg-4">
+                    <div class="formation-contact-card text-center h-100 p-4 bg-white rounded shadow-sm">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-whatsapp display-1 text-success"></i>
                         </div>
-                        <div class="mb-3">
-                            <i class="bi bi-phone-fill text-primary me-2"></i>
-                            <strong>Téléphone :</strong> +226 60 02 36 37 / +226 65 95 70 30
-                        </div>
-                        <div class="mb-3">
-                            <i class="bi bi-geo-alt-fill text-primary me-2"></i>
-                            <strong>Localisation :</strong> Ouagadougou, Burkina Faso
-                        </div>
-                        <div class="mb-3">
-                            <i class="bi bi-clock-fill text-primary me-2"></i>
-                            <strong>Horaires :</strong> Lun - Ven : 8h - 17h
-                        </div>
+                        <h4 class="mb-3">WhatsApp</h4>
+                        <p class="text-muted mb-3">
+                            Réponse immédiate à vos questions
+                        </p>
+                        <a href="https://wa.me/22660023637?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20une%20formation" 
+                           class="btn btn-success btn-lg w-100" 
+                           target="_blank">
+                            <i class="bi bi-whatsapp"></i> Discuter maintenant
+                        </a>
+                        <p class="small text-muted mt-3 mb-0">
+                            <i class="bi bi-check-circle"></i> Réponse rapide garantie
+                        </p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <form class="formation-contact-form" id="formationForm" action="https://formspree.io/f/mojnjqaz" method="POST">
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="nom" class="form-label">Nom complet *</label>
-                                <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre nom complet"required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="telephone" class="form-label">Téléphone *</label>
-                                <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="Votre téléphone" required>
-                            </div>
+    
+                <!-- Email -->
+                <div class="col-lg-4">
+                    <div class="formation-contact-card text-center h-100 p-4 bg-white rounded shadow-sm">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-envelope-fill display-1 text-primary"></i>
                         </div>
-                        <div class="mb-3">
-                            <label for="email-form" class="form-label">Email *</label>
-                            <input type="email" class="form-control" id="email-form" name="email-form" placeholder="Votre mail" required>
+                        <h4 class="mb-3">Email</h4>
+                        <p class="text-muted mb-3">
+                            Pour une demande de devis détaillé
+                        </p>
+                        <a href="mailto:hkabconsult@outlook.com?subject=Demande%20de%20formation&body=Bonjour,%0D%0A%0D%0AJe%20souhaite%20obtenir%20un%20devis%20pour%20:%0D%0A%0D%0AFormation%20:%20%0D%0AType%20:%20%0D%0ANombre%20de%20participants%20:%20%0D%0ADates%20souhaitées%20:%20%0D%0A%0D%0AMerci" 
+                           class="btn btn-primary btn-lg w-100">
+                            <i class="bi bi-envelope"></i> Envoyer un email
+                        </a>
+                        <p class="small text-muted mt-3 mb-0">
+                            hkabconsult@outlook.com
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Téléphone -->
+                <div class="col-lg-4">
+                    <div class="formation-contact-card text-center h-100 p-4 bg-white rounded shadow-sm">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-telephone-fill display-1 text-info"></i>
                         </div>
-                        <div class="mb-3">
-                            <label for="structure" class="form-label">Structure / Organisation</label>
-                            <input type="text" class="form-control" id="structure" name="structure" placeholder="Nom de votre structure">
+                        <h4 class="mb-3">Téléphone</h4>
+                        <p class="text-muted mb-3">
+                            Parlons de votre projet directement
+                        </p>
+                        <div class="d-grid gap-2 mb-2">
+                            <a href="tel:+22660023637" class="btn btn-info">
+                                <i class="bi bi-telephone"></i> +226 60 02 36 37
+                            </a>
+                            <a href="tel:+22665957030" class="btn btn-outline-info">
+                                <i class="bi bi-telephone"></i> +226 65 95 70 30
+                            </a>
                         </div>
-                        <div class="mb-3">
-                            <label for="formation-choisie" class="form-label">Formation souhaitée *</label>
-                            <select class="form-select" id="formation-choisie" name="formation-choisie" required>
-                                <option value="">Choisissez une formation</option>
-                                <option value="Google Workspace">Google Workspace</option>
-                                <option value="Microsoft Office">Microsoft Office</option>
-                                <option value="Microsoft workspace">Microsoft 365 Workspace</option>
-                                <option value="Canva Pro">Canva Pro</option>
-                                <option value="Adobe Photoshop">Adobe Photoshop</option>
-                                <option value="Adobe Illustrator">Adobe Illustrator</option>
-                                <option value="Zotero">Zotero</option>
-                                <option value="Latex">Latex</option>
-                                <option value="Présentation">Présentation</option>
-                                <option value="Capsules Vidéo">Capsules Vidéo</option>
-                                <option value="IA contenu">IA pour la Création de Contenu</option>
-                                <option value="Community Management">Community Management</option>
-                                <option value="Initiation Informatique">Initiation à l'Informatique</option>
-                                <option value="protect data">Protéger ses données</option>
-                                <option value="Sur Mesure">Formation Sur Mesure</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="type-formation" class="form-label">Type de formation *</label>
-                            <select class="form-select" id="type-formation" name="name" required>
-                                <option value="">Choisissez un type</option>
-                                <option value="Individuelle">Individuelle</option>
-                                <option value="Groupe">Groupe</option>
-                                <option value="Intra-entreprise">Intra-entreprise</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="nombre-participants" class="form-label">Nombre de participants</label>
-                            <input type="number" class="form-control" id="nombre-participants" min="1" max="15" name="nombre-participants" >
-                        </div>
-                        <div class="mb-3">
-                            <label for="message-form" class="form-label">Informations complémentaires</label>
-                            <textarea class="form-control" id="message-form" rows="4"name="message" placeholder="Dates souhaitées, besoins spécifiques..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-lg w-100">
-                            <i class="bi bi-send"></i> Envoyer la demande
-                        </button>
-                    </form>
+                        <p class="small text-muted mt-3 mb-0">
+                            Lun - Ven : 8h - 17h
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Informations complémentaires -->
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-box text-center p-3 bg-white rounded">
+                        <i class="bi bi-geo-alt-fill text-danger fs-2 mb-2"></i>
+                        <h6 class="fw-bold">Localisation</h6>
+                        <p class="small mb-0 text-muted">Ouagadougou, Burkina Faso</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-box text-center p-3 bg-white rounded">
+                        <i class="bi bi-clock-fill text-warning fs-2 mb-2"></i>
+                        <h6 class="fw-bold">Horaires</h6>
+                        <p class="small mb-0 text-muted">Lun - Ven : 8h - 17h</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-box text-center p-3 bg-white rounded">
+                        <i class="bi bi-people-fill text-success fs-2 mb-2"></i>
+                        <h6 class="fw-bold">Groupe</h6>
+                        <p class="small mb-0 text-muted">Max 15 participants</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-box text-center p-3 bg-white rounded">
+                        <i class="bi bi-calendar-check-fill text-info fs-2 mb-2"></i>
+                        <h6 class="fw-bold">Disponibilité</h6>
+                        <p class="small mb-0 text-muted">Sessions sur mesure</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Formations disponibles -->
+            <div class="bg-white rounded shadow-sm p-4 mb-4">
+                <h4 class="text-center mb-4">
+                    <i class="bi bi-mortarboard me-2"></i>Formations disponibles
+                </h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Google Workspace</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Microsoft Office</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Microsoft 365 Workspace</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Canva Pro</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Adobe Photoshop</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Adobe Illustrator</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Zotero</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>LaTeX</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Techniques de présentation</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Capsules vidéo éducatives</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>IA pour la création de contenu</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Community Management</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Initiation à l'informatique</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Protection des données</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Formations sur mesure</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Types de formation -->
+            <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                    <div class="type-formation-card p-4 bg-white rounded shadow-sm text-center h-100">
+                        <i class="bi bi-person-circle display-4 text-primary mb-3"></i>
+                        <h5>Formation Individuelle</h5>
+                        <p class="text-muted small mb-0">Accompagnement personnalisé à votre rythme</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="type-formation-card p-4 bg-white rounded shadow-sm text-center h-100">
+                        <i class="bi bi-people-fill display-4 text-success mb-3"></i>
+                        <h5>Formation en Groupe</h5>
+                        <p class="text-muted small mb-0">Sessions collectives jusqu'à 15 participants</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="type-formation-card p-4 bg-white rounded shadow-sm text-center h-100">
+                        <i class="bi bi-building display-4 text-warning mb-3"></i>
+                        <h5>Formation Intra-entreprise</h5>
+                        <p class="text-muted small mb-0">Dans vos locaux, programme sur mesure</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- CTA Final -->
+            <div class="text-center bg-gradient-primary text-white rounded p-5">
+                <h3 class="mb-3">Prêt(e) à vous former ?</h3>
+                <p class="lead mb-4">
+                    Choisissez votre moyen de contact préféré et recevez votre devis sous 24h
+                </p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="https://wa.me/22660023637?text=Bonjour,%20je%20souhaite%20un%20devis%20pour%20une%20formation" 
+                       class="btn btn-success btn-lg px-5" 
+                       target="_blank">
+                        <i class="bi bi-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="mailto:hkabconsult@outlook.com?subject=Demande%20de%20devis%20formation" 
+                       class="btn btn-light btn-lg px-5">
+                        <i class="bi bi-envelope"></i> Email
+                    </a>
+                    <a href="tel:+22660023637" 
+                       class="btn btn-outline-light btn-lg px-5">
+                        <i class="bi bi-telephone"></i> Appeler
+                    </a>
+                </div>
+                <p class="small mt-4 mb-0 opacity-75">
+                    <i class="bi bi-shield-check"></i> Devis gratuit et sans engagement
+                </p>
+            </div>
+    
+            <!-- Garanties -->
+            <div class="row mt-5 g-3">
+                <div class="col-md-3 col-6">
+                    <div class="text-center">
+                        <i class="bi bi-award-fill text-primary fs-1"></i>
+                        <p class="small fw-bold mt-2 mb-0">Formatrice certifiée</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center">
+                        <i class="bi bi-clock-history text-success fs-1"></i>
+                        <p class="small fw-bold mt-2 mb-0">Réponse sous 24h</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center">
+                        <i class="bi bi-file-earmark-text text-warning fs-1"></i>
+                        <p class="small fw-bold mt-2 mb-0">Attestation fournie</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center">
+                        <i class="bi bi-calendar-range text-info fs-1"></i>
+                        <p class="small fw-bold mt-2 mb-0">Dates flexibles</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- MODAL INSCRIPTION -->
     <div class="modal fade" id="modalInscription" tabindex="-1">
