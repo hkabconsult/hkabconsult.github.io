@@ -307,6 +307,181 @@ section:not(.hero) {
 }
 
 /* ========================================
+   SECTION CONTACT AMÉLIORÉE
+======================================== */
+
+/* Cartes de contact */
+.contact-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.contact-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.contact-card i {
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover i {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.contact-card a {
+    transition: all 0.3s ease;
+}
+
+.contact-card a:hover {
+    transform: scale(1.05);
+}
+
+/* Liens de contact */
+.contact-card a.text-white:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Boutons des cartes */
+.contact-card .btn {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Réseaux sociaux grande taille */
+.social-links-large .btn {
+    width: 140px;
+    height: 120px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.social-links-large .btn:hover {
+    background: white;
+    color: var(--dark-color) !important;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3);
+    border-color: white;
+}
+
+.social-links-large .btn i {
+    transition: all 0.3s ease;
+}
+
+.social-links-large .btn:hover i {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Effet dégradé subtil sur les cartes */
+.bg-gradient {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 0.02) 100%
+    );
+}
+
+/* CTA finale */
+.border-top {
+    border-top-width: 2px !important;
+}
+
+/* Animation au survol des icônes principales */
+@keyframes float-icon {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.contact-card:hover .display-3 {
+    animation: float-icon 1.5s ease-in-out infinite;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .social-links-large .btn {
+        width: 100px;
+        height: 100px;
+        margin: 0.5rem;
+    }
+    
+    .social-links-large .btn i {
+        font-size: 1.5rem !important;
+    }
+    
+    .contact-card {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-links-large .btn {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .social-links-large .btn span {
+        font-size: 0.7rem;
+    }
+}
+
+/* Amélioration de la lisibilité */
+.contact-card h4 {
+    font-weight: 600;
+    color: white;
+}
+
+.contact-card p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-card .small {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Boutons CTA finaux */
+#contact .btn-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border: none;
+}
+
+#contact .btn-primary:hover {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+#contact .btn-success:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+}
+
+#contact .btn-outline-light:hover {
+    background: white;
+    color: var(--dark-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+}
+
+
+/* ========================================
    FOOTER & BACK TO TOP
 ======================================== */
 footer {
