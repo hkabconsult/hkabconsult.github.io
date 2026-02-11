@@ -481,6 +481,71 @@ section:not(.hero) {
 }
 
 
+
+/*=============================
+CONTACT FORMATION
+====================*/
+
+.formation-contact-card {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.formation-contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15) !important;
+    border-color: var(--primary-color);
+}
+
+.formation-contact-card .icon-wrapper i {
+    transition: all 0.3s ease;
+}
+
+.formation-contact-card:hover .icon-wrapper i {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.info-box {
+    transition: all 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.type-formation-card {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.type-formation-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.type-formation-card i {
+    transition: all 0.3s ease;
+}
+
+.type-formation-card:hover i {
+    transform: scale(1.15);
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .formation-contact-card {
+        margin-bottom: 1rem;
+    }
+}
+
+
+
 /* ========================================
    FOOTER & BACK TO TOP
 ======================================== */
