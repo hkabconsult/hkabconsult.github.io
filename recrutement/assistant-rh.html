@@ -2,116 +2,459 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Avis de Recrutement – Assistant(e) RH</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GEBANA FASO recrute un(e) Assistant(e) Ressources Humaines - Candidatures jusqu'au 03 mars 2026">
+    <meta name="keywords" content="recrutement, assistant RH, GEBANA FASO, emploi Burkina Faso, job RH">
+    <title>Recrutement Assistant(e) RH - GEBANA FASO</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
     <style>
+        :root {
+            --primary-color: #2E7D32;
+            --secondary-color: #FFA000;
+            --dark-color: #1B5E20;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 40px;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
         }
-        h1, h2 {
-            color: #1a7f3c;
+        
+        .header-banner {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
         }
-        .highlight {
+        
+        .company-logo {
+            width: 150px;
+            height: 150px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .company-logo h2 {
+            color: var(--primary-color);
+            margin: 0;
             font-weight: bold;
-            color: #c0392b;
         }
-        ul {
-            margin-bottom: 20px;
+        
+        .deadline-badge {
+            background: var(--secondary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(255,160,0,0.3);
+            animation: pulse 2s infinite;
         }
-        .section {
-            margin-bottom: 30px;
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
         }
-        .footer {
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #666;
-            border-top: 1px solid #ccc;
-            padding-top: 10px;
+        
+        .content-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--secondary-color);
+        }
+        
+        .mission-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .mission-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .mission-list li i {
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+        
+        .requirement-badge {
+            background: #E8F5E9;
+            color: var(--dark-color);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            display: inline-block;
+            margin: 0.25rem;
+            font-weight: 500;
+        }
+        
+        .apply-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .apply-btn {
+            background: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255,160,0,0.3);
+        }
+        
+        .apply-btn:hover {
+            background: #FF8F00;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255,160,0,0.4);
+        }
+        
+        .highlight-box {
+            background: #FFF3E0;
+            border-left: 5px solid var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+        }
+        
+        .info-icon {
+            background: var(--primary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
         }
     </style>
 </head>
 <body>
-
-    <h1>AVIS DE RECRUTEMENT – ASSISTANT(E) RH</h1>
-
-    <div class="section">
-        <p><strong>GEBANA FASO SAS</strong>, entreprise agro-industrielle spécialisée dans la transformation et l’exportation de mangues séchées et de noix de cajou, recrute un(e) <strong>Assistant(e) Ressources Humaines</strong>.</p>
-
-        <p class="highlight">REJOIGNEZ UNE ENTREPRISE OÙ L’HUMAIN EST AU CŒUR DE LA PERFORMANCE !</p>
-
-        <p>Vous évoluerez dans un environnement stimulant, avec des défis enrichissants et une forte exposition aux réalités RH d’un site industriel.</p>
+    <!-- Header -->
+    <div class="header-banner">
+        <div class="container">
+            <div class="company-logo">
+                <h2>GEBANA<br>FASO</h2>
+            </div>
+            <h1 class="text-center mb-3">AVIS DE RECRUTEMENT</h1>
+            <h2 class="text-center mb-4">ASSISTANT(E) RESSOURCES HUMAINES</h2>
+            <div class="text-center">
+                <span class="deadline-badge">
+                    <i class="bi bi-clock-history"></i> Date limite : 03 mars 2026 - 18h
+                </span>
+            </div>
+        </div>
     </div>
 
-    <div class="section">
-        <h2>Profil recherché</h2>
-        <ul>
-            <li>Être titulaire d’une Licence en Gestion des Ressources Humaines ou en Droit du travail.</li>
-            <li>Avoir une expérience professionnelle d’un (1) an dans la Gestion des Ressources Humaines.</li>
-            <li>Maîtrise d’Excel, Word, PowerPoint.</li>
-            <li>Aisance rédactionnelle, rigueur, discrétion, dynamisme.</li>
-        </ul>
+    <!-- Main Content -->
+    <div class="container mb-5">
+        <!-- À propos de l'entreprise -->
+        <div class="content-card">
+            <h3 class="section-title">
+                <i class="bi bi-building"></i> À propos de GEBANA FASO
+            </h3>
+            <p class="lead">
+                <strong>GEBANA FASO SAS</strong> est une entreprise agro-industrielle spécialisée dans la 
+                <strong>transformation et l'exportation de mangues séchées et de noix de cajou</strong>.
+            </p>
+            <div class="highlight-box">
+                <h5 class="text-dark mb-3">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    REJOIGNEZ UNE ENTREPRISE OÙ L'HUMAIN EST AU CŒUR DE LA PERFORMANCE !
+                </h5>
+                <p class="mb-0">
+                    Vous évoluerez dans un <strong>environnement stimulant</strong>, avec des 
+                    <strong>défis enrichissants</strong> et une forte exposition aux réalités RH 
+                    d'un site industriel.
+                </p>
+            </div>
+        </div>
+
+        <!-- Profil recherché -->
+        <div class="content-card">
+            <h3 class="section-title">
+                <i class="bi bi-person-check"></i> Profil recherché
+            </h3>
+            
+            <h5 class="mb-3"><i class="bi bi-mortarboard"></i> Formation</h5>
+            <div class="mb-4">
+                <span class="requirement-badge">
+                    <i class="bi bi-check-circle"></i> Licence en Gestion des Ressources Humaines
+                </span>
+                <span class="requirement-badge">
+                    <i class="bi bi-check-circle"></i> Licence en Droit du travail
+                </span>
+            </div>
+
+            <h5 class="mb-3"><i class="bi bi-briefcase"></i> Expérience</h5>
+            <div class="mb-4">
+                <span class="requirement-badge">
+                    <i class="bi bi-check-circle"></i> Minimum 1 an d'expérience en Gestion des RH
+                </span>
+            </div>
+
+            <h5 class="mb-3"><i class="bi bi-laptop"></i> Compétences techniques</h5>
+            <div class="mb-4">
+                <span class="requirement-badge">
+                    <i class="bi bi-check-circle"></i> Maîtrise d'Excel
+                </span>
+                <span class="requirement-badge">
+                    <i class="bi bi-check-circle"></i> Maîtrise de Word
+                </span>
+                <span class="requirement-badge">
+                    <i class="bi bi-check-circle"></i> Maîtrise de PowerPoint
+                </span>
+            </div>
+
+            <h5 class="mb-3"><i class="bi bi-person-badge"></i> Qualités personnelles</h5>
+            <div>
+                <span class="requirement-badge">
+                    <i class="bi bi-check-circle"></i> Aisance rédactionnelle
+                </span>
+                <span class="requirement-badge">
+                    <i class="bi bi-check-circle"></i> Rigueur
+                </span>
+                <span class="requirement-badge">
+                    <i class="bi bi-check-circle"></i> Discrétion
+                </span>
+                <span class="requirement-badge">
+                    <i class="bi bi-check-circle"></i> Dynamisme
+                </span>
+            </div>
+        </div>
+
+        <!-- Missions principales -->
+        <div class="content-card">
+            <h3 class="section-title">
+                <i class="bi bi-list-task"></i> Missions principales
+            </h3>
+            <ul class="mission-list list-unstyled">
+                <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Élaboration et mise à jour des dossiers du personnel
+                </li>
+                <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Procéder à l'immatriculation ou à l'entrée et la sortie des employés à la CNSS
+                </li>
+                <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Classement et Archivage mensuel des bulletins de paie
+                </li>
+                <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Rédaction et signature des contrats saisonniers et de stage
+                </li>
+                <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Accueil des nouveaux salariés
+                </li>
+                <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Diffusion des notes de services, Communications RH, Affichages obligatoires
+                </li>
+                <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Remplissage des bulletins de présence saisonniers et permanents
+                </li>
+                <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Réception des fiches de pointages et des heures supplémentaires
+                </li>
+                <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Réception des candidatures et présélection
+                </li>
+                <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Gestion de la crèche
+                </li>
+                <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Gestion de la cantine
+                </li>
+                <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Toutes autres tâches confiées par le supérieur hiérarchique
+                </li>
+            </ul>
+        </div>
+
+        <!-- Conditions -->
+        <div class="row g-4 mb-4">
+            <div class="col-md-6">
+                <div class="content-card h-100">
+                    <h3 class="section-title">
+                        <i class="bi bi-geo-alt"></i> Lieu de travail
+                    </h3>
+                    <p class="mb-0">
+                        <span class="info-icon">
+                            <i class="bi bi-building"></i>
+                        </span>
+                        <strong>Siège de GEBANA FASO</strong>
+                    </p>
+                    <p class="ms-5 mb-0">
+                        Mê (Commune de Peni)
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content-card h-100">
+                    <h3 class="section-title">
+                        <i class="bi bi-file-text"></i> Type de contrat
+                    </h3>
+                    <p class="mb-2">
+                        <span class="info-icon">
+                            <i class="bi bi-calendar-check"></i>
+                        </span>
+                        <strong>Contrat à Durée Déterminée (CDD)</strong>
+                    </p>
+                    <p class="ms-5 mb-0 text-muted">
+                        Renouvelable en fonction de la performance
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Encouragement -->
+        <div class="alert alert-success border-start border-5 border-success">
+            <h5 class="alert-heading">
+                <i class="bi bi-gender-female"></i> Encouragement à la diversité
+            </h5>
+            <p class="mb-0">
+                <strong>Les candidatures féminines sont fortement encouragées.</strong>
+            </p>
+        </div>
+
+        <!-- Dossier de candidature -->
+        <div class="content-card">
+            <h3 class="section-title">
+                <i class="bi bi-folder2-open"></i> Dossier de candidature
+            </h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="mb-3">Documents requis :</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-file-earmark-text text-primary me-2"></i>
+                            Lettre de motivation adressée au Co-Directeur Général de GEBANA FASO
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-card-text text-primary me-2"></i>
+                            Copie de la CNIB
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-file-person text-primary me-2"></i>
+                            CV actualisé
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-award text-primary me-2"></i>
+                            Copies des diplômes, attestations et/ou certificats de travail
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="mb-3">Informations importantes :</h5>
+                    <div class="alert alert-warning">
+                        <h6 class="alert-heading">
+                            <i class="bi bi-exclamation-triangle"></i> Date limite
+                        </h6>
+                        <p class="mb-2 fs-5 fw-bold">03 mars 2026 à 18h00</p>
+                    </div>
+                    <div class="alert alert-info">
+                        <h6 class="alert-heading">
+                            <i class="bi bi-envelope"></i> Modalités de dépôt
+                        </h6>
+                        <p class="mb-0">
+                            Envoyer le dossier par email à :<br>
+                            <strong class="fs-5">recrutements.bf@gebana.com</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Postuler -->
+        <div class="apply-section text-center">
+            <h3 class="mb-3">
+                <i class="bi bi-send-check"></i> Prêt(e) à postuler ?
+            </h3>
+            <p class="lead mb-4">
+                Envoyez votre dossier complet avant le <strong>03 mars 2026 à 18h00</strong>
+            </p>
+            <a href="mailto:recrutements.bf@gebana.com?subject=Candidature Assistant(e) RH&body=Bonjour,%0D%0A%0D%0AVeuillez trouver ci-joint mon dossier de candidature pour le poste d'Assistant(e) Ressources Humaines.%0D%0A%0D%0ACordialement," 
+               class="btn apply-btn btn-lg">
+                <i class="bi bi-envelope-fill"></i> Postuler par email
+            </a>
+            <p class="mt-4 mb-0 small">
+                <i class="bi bi-info-circle"></i> 
+                Assurez-vous d'avoir tous les documents requis avant d'envoyer votre candidature
+            </p>
+        </div>
     </div>
 
-    <div class="section">
-        <h2>Missions principales</h2>
-        <ul>
-            <li>Élaboration et mise à jour des dossiers du personnel</li>
-            <li>Immatriculation, entrée et sortie des employés à la CNSS</li>
-            <li>Classement et archivage mensuel des bulletins de paie</li>
-            <li>Rédaction et signature des contrats saisonniers et de stage</li>
-            <li>Accueil des nouveaux salariés</li>
-            <li>Diffusion des notes de service et communications RH</li>
-            <li>Remplissage des bulletins de présence</li>
-            <li>Réception des fiches de pointage et heures supplémentaires</li>
-            <li>Réception des candidatures et présélection</li>
-            <li>Gestion de la crèche et de la cantine</li>
-            <li>Toutes autres tâches confiées par le supérieur hiérarchique</li>
-        </ul>
-    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">
+                &copy; 2026 GEBANA FASO SAS - Tous droits réservés
+            </p>
+            <p class="small mb-0 mt-2">
+                Mangues séchées & Noix de cajou
+            </p>
+        </div>
+    </footer>
 
-    <div class="section">
-        <h2>Lieu de travail</h2>
-        <p>Siège de GEBANA FASO à Mê (Commune de Peni).</p>
-    </div>
-
-    <div class="section">
-        <h2>Type de contrat</h2>
-        <p>Contrat à Durée Déterminée (CDD) renouvelable en fonction de la performance.</p>
-        <p><strong>Les candidatures féminines sont fortement encouragées.</strong></p>
-    </div>
-
-    <div class="section">
-        <h2>Dossier de candidature</h2>
-        <ul>
-            <li>Lettre de motivation adressée au Co-Directeur Général</li>
-            <li>Copie de la CNIB</li>
-            <li>CV actualisé</li>
-            <li>Copies des diplômes, attestations et certificats de travail</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Date limite de dépôt</h2>
-        <p><strong>03 mars 2026 à 18 heures.</strong></p>
-    </div>
-
-    <div class="section">
-        <h2>Modalités de dépôt</h2>
-        <p>Envoyer le dossier par email à : 
-            <a href="mailto:recrutements.bf@gebana.com">recrutements.bf@gebana.com</a>
-        </p>
-    </div>
-
-    <div class="footer">
-        <p><strong>GEBANA FASO SAS</strong><br>
-        RCCM N° BF-BBD-01-2022-M 1246 du 09/08/2022 – IFU : 00171476S<br>
-        01 BP 1238 BOBO-DIOULASSO 01<br>
-        Tél. : (+226) 76 04 50 27<br>
-        Site Web : <a href="https://www.gebana.com" target="_blank">www.gebana.com</a></p>
-    </div>
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Animation au scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.content-card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '0';
+                        entry.target.style.transform = 'translateY(20px)';
+                        entry.target.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                        
+                        setTimeout(() => {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }, 100);
+                        
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+            
+            cards.forEach(card => observer.observe(card));
+        });
+    </script>
 </body>
 </html>
