@@ -245,6 +245,32 @@ section:not(.hero) {
     
 }
 
+
+/* ========================================
+   PORTFOLIO — zoom image au survol
+======================================== */
+.portfolio-card {
+    overflow: hidden;
+}
+
+.portfolio-card .card-body {
+    padding: 0;
+    overflow: hidden;
+}
+
+.portfolio-card img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+    transition: transform 0.4s ease;
+    display: block;
+}
+
+.portfolio-card:hover img {
+    transform: scale(1.08);
+}
+
+
 /* ========================================
    SITES WEB cover
 ======================================== */
