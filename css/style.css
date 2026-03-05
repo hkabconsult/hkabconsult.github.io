@@ -241,8 +241,12 @@ section:not(.hero) {
 }
 
 .portfolio-card {
-    overflow: hidden;
-    cursor: pointer;
+    width: 100%;
+    height: auto;          /* ← laisse l’image garder ses proportions */
+    object-fit: contain;
+    background: #f8f9fa;
+    transition: transform 0.4s ease;
+    display: block;
 }
 
 .portfolio-card .card-body {
@@ -251,10 +255,11 @@ section:not(.hero) {
 }
 
 .portfolio-card img {
-    height: 500px;
-    object-fit: contain;   /* ← contain au lieu de cover */
     width: 100%;
-    background: #f8f9fa;   /* fond neutre si l'image ne remplit pas */
+    height: 500px;
+    object-fit: cover;     /* remplit le cadre */
+    object-position: center; /* centre l’image */
+    background: #f8f9fa;
     transition: transform 0.4s ease;
     display: block;
 }
